@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js"></script>  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main">
+    <section class="section rate_me">
+      <img src="./images/icon-star.svg" alt="" class="star-logo">
+      <h1 class="message question">How did we do?</h1>
+      <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <ul class="rating_numbers">
+        <li class="mark">1</li>
+        <li class="mark">2</li>
+        <li class="mark">3</li>
+        <li class="mark">4</li>
+        <li class="mark">5</li>
+      </ul>
+      <button class="submit_button">Submit</button>
+    </section>
+    <section class="section thank_you hidden">
+      <img src="./images/illustration-thank-you.svg" alt="" class="illustration">
+      <p class="result">You selected <span class="your_result"></span> out of 5</p>
+      <h1 class="message thanks_text">Thank you!</h1>
+      <p class="description">  We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+
+
+</body>
+</html>

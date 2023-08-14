@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --weight_normal: 400;
+    --weight_bold: 700;
+
+    --color_white: hsl(0, 0%, 100%);
+    --color_orange: hsl(25, 97%, 53%);
+    --color_medium-grey: hsl(216, 12%, 54%);
+    --color_dark-blue-opaq: hsl(212, 19%, 18%);
+    --color_dark-blue: hsl(213, 19%, 18%, 0.6);
+    --color_very-dark: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--color_very-dark);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.section {
+    background-color: var(--color_dark-blue);
+    max-width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.star-logo,
+.rating_numbers li
+ {
+    display: flex;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color_dark-blue-opaq);
+    padding: 1rem;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--color_medium-grey);
+}
+.message {
+    color: var(--color_white);
+    font-size: 1.7rem;
+    font-weight: var(--weight_normal);
+}
+.description {
+    color: var(--color_medium-grey);
+    line-height: 1.5rem;
+}
+.rating_numbers {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.submit_button {
+    background-color: var(--color_orange);
+    color: var(--color_white);
+    border-style: none;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    font-weight: var(--weight_bold);
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-size: 0.9rem;
+}
+
+.submit_button:hover {
+    cursor: pointer;
+    color: var(--color_orange);
+    background-color: var(--color_white);
+}
+.rating_numbers li:hover {
+    background-color: var(--color_orange);
+    color: var(--color_white);
+    cursor: pointer;
+}
+
+.rating_numbers li.chosen_one {
+    background-color: var(--color_medium-grey);
+    color: var(--color_white);
+}
+.thank_you {
+    align-items: center;
+    text-align: center;
+}
+.illustration {
+    max-width: 150px;
+}
+.result {
+    background-color: var(--color_dark-blue-opaq);
+    color: var(--color_orange);
+    padding: 0.6rem;
+    border-radius: 2rem;
+}
+.hidden {
+    display: none;
+}
